@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2eu31qslteNpFm9Iex7D/t5fdN8AHY3KY2JYZBid6lk=",
+  "Source": "TodoApi.AuthenticationService",
+  "BasePath": "_content/TodoApi.AuthenticationService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

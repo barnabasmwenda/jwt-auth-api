@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BHtER/c5cdrZnhgL03RaWEZiOKMhFzaPqyTk8A3Scnx/9RgzHElB8+jQQiqZzXp5pS1gusvUk/Mayu++QfRTcg==",
+  "dgSpecHash": "Q6niXu8Qi9bZQI62hGYXjV50A4j3svlLwO1yS2nW8k6VmFflz+T1t8nwLFQLCebSR4sq0rlDZvfpcHhlHsnN/w==",
   "success": true,
   "projectFilePath": "D:\\Microservices\\TODO APP (MICROSERVICES)\\TODOLIST_API\\ToDoListApi\\TodoApi.AuthenticationService\\TodoApi.AuthenticationService.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\Barnabas\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.3\\microsoft.entityframeworkcore.design.8.0.3.nupkg.sha512",
     "C:\\Users\\Barnabas\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.3\\microsoft.entityframeworkcore.relational.8.0.3.nupkg.sha512",
     "C:\\Users\\Barnabas\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.3\\microsoft.entityframeworkcore.sqlserver.8.0.3.nupkg.sha512",
+    "C:\\Users\\Barnabas\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.3\\microsoft.entityframeworkcore.tools.8.0.3.nupkg.sha512",
     "C:\\Users\\Barnabas\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Barnabas\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Barnabas\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
