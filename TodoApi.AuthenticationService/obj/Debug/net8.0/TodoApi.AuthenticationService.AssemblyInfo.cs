@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TodoApi.AuthenticationService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0427e943454e65c9536d813af87d57516ee0972b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd2c1f1aa4219b9932d27cdde0bdc586e37ef228")]
 [assembly: System.Reflection.AssemblyProductAttribute("TodoApi.AuthenticationService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TodoApi.AuthenticationService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
