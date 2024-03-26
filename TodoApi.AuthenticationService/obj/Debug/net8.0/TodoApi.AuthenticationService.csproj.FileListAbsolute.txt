@@ -135,3 +135,4 @@ D:\Microservices\TODO APP (MICROSERVICES)\TODOLIST_API\ToDoListApi\TodoApi.Authe
 D:\Microservices\TODO APP (MICROSERVICES)\TODOLIST_API\ToDoListApi\TodoApi.AuthenticationService\obj\Debug\net8.0\TodoApi.AuthenticationService.pdb
 D:\Microservices\TODO APP (MICROSERVICES)\TODOLIST_API\ToDoListApi\TodoApi.AuthenticationService\obj\Debug\net8.0\TodoApi.AuthenticationService.genruntimeconfig.cache
 D:\Microservices\TODO APP (MICROSERVICES)\TODOLIST_API\ToDoListApi\TodoApi.AuthenticationService\obj\Debug\net8.0\ref\TodoApi.AuthenticationService.dll
+D:\Microservices\TODO APP (MICROSERVICES)\TODOLIST_API\ToDoListApi\TodoApi.AuthenticationService\bin\Debug\net8.0\BCrypt.Net.dll

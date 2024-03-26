@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Q6niXu8Qi9bZQI62hGYXjV50A4j3svlLwO1yS2nW8k6VmFflz+T1t8nwLFQLCebSR4sq0rlDZvfpcHhlHsnN/w==",
+  "dgSpecHash": "8S5lEVF6QlAdt21Evf/CwA5X3Yw2Aj+pU6yQ2dvKuaRz6NC/d8boAnDe0T6q/kqqADlBa+viswocN2Yippi39Q==",
   "success": true,
   "projectFilePath": "D:\\Microservices\\TODO APP (MICROSERVICES)\\TODOLIST_API\\ToDoListApi\\TodoApi.AuthenticationService\\TodoApi.AuthenticationService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Barnabas\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Barnabas\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\Barnabas\\.nuget\\packages\\bcrypt.net\\0.1.0\\bcrypt.net.0.1.0.nupkg.sha512",
     "C:\\Users\\Barnabas\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Barnabas\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Barnabas\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
@@ -97,5 +98,16 @@
     "C:\\Users\\Barnabas\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Barnabas\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BCrypt.Net 0.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "BCrypt.Net",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

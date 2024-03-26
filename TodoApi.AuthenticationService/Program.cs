@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using TodoApi.AuthenticationService.Data;
+using TodoApi.AuthenticationService.Interfaces;
+using TodoApi.AuthenticationService.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<IUserService, UserService>();
+
+builder.Services.AddSingleton<JwtTokenService>();
+
+builder.Services.AddSingleton<PasswordHashService>();
 
 var app = builder.Build();
 
