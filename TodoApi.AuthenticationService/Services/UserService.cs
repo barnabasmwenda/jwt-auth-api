@@ -22,17 +22,13 @@ namespace TodoApi.AuthenticationService.Services
 
         public async Task<User> RegisterAsync(string username, string email, string password)
         {
-            // Check if the username already exists
             if (await _dbContext.Users.AnyAsync(u => u.Name == username))
                 throw new ArgumentException("Username is already taken", nameof(username));
 
-            // Hash the password before storing
             string passwordHash = _passwordHashService.HashPassword(password);
 
-            // Create a new user
             var user = new User { Name = username, Email = email, PasswordHash = passwordHash };
 
-            // Add user to database
             _dbContext.Users.Add(user);
             await _dbContext.SaveChangesAsync();
 
