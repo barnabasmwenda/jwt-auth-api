@@ -28,6 +28,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.Use(async (context, next) =>
+{
+    context.Response.Headers.Add("Content-Security-Policy", "...");
+    context.Response.Headers.Add("Strict-Transport-Security", "...");
+    await next();
+});
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

@@ -2,7 +2,7 @@
 {
     public class PasswordHashService
     {
-        private const int WorkFactor = 12;
+        private const int WorkFactor = 8;
 
         public bool VerifyPasswordHash(string password, string passwordHash)
         {
