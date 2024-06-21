@@ -30,17 +30,14 @@ namespace TodoApi.AuthenticationService.Controllers
             }
             catch (ArgumentException ex)
             {
-                // Check if the exception message contains "Username is already taken"
                 if (ex.Message.Contains("Username is already taken"))
                 {
                     return Conflict($"The username '{model.Username}' is already taken.");
                 }
-                // Check if the exception message contains "Email is already taken"
                 else if (ex.Message.Contains("Email is already taken"))
                 {
                     return Conflict($"The email '{model.Email}' is already taken.");
                 }
-                // Handle other ArgumentExceptions
                 else
                 {
                     return BadRequest(ex.Message);
@@ -48,7 +45,6 @@ namespace TodoApi.AuthenticationService.Controllers
             }
             catch (Exception ex)
             {
-                // Handle other exceptions
                 return StatusCode(500, "An error occurred while registering the user.");
             }
         }
@@ -56,18 +52,14 @@ namespace TodoApi.AuthenticationService.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequestModel model)
         {
-            // Authenticate user
-            var token = await _userService.AuthenticateAsync(model.Username, model.Password);
+            var token = await _userService.AuthenticateAsync(model.Email, model.Password);
 
-            // Check if authentication was successful
             if (!string.IsNullOrEmpty(token))
             {
-                // Return token if authentication was successful
                 return Ok(new { Token = token });
             }
             else
             {
-                // Return BadRequest with appropriate error message for invalid login credentials
                 return BadRequest("Invalid email or password");
             }
         }

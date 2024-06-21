@@ -4,12 +4,12 @@ namespace TodoApi.AuthenticationService.Models
 {
     public class LoginRequestModel
     {
-        [Required(ErrorMessage = "Username is required")]
-        [MaxLength(100, ErrorMessage = "Username cannot exceed 100 characters")]
-        public string Username { get; set; }
+        [Required(ErrorMessage = "Email address is required")]
+        [MaxLength(254, ErrorMessage = "Invalid email address")]
+        public string Email { get; set; }
 
         [Required(ErrorMessage = "Password is required")]
-        [MaxLength(100, ErrorMessage = "Password cannot exceed 100 characters")]
+        [MaxLength(100, ErrorMessage = "Invalid password")]
         public string Password { get; set; }
     }
 }

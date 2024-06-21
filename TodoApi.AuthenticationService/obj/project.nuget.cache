@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8S5lEVF6QlAdt21Evf/CwA5X3Yw2Aj+pU6yQ2dvKuaRz6NC/d8boAnDe0T6q/kqqADlBa+viswocN2Yippi39Q==",
+  "dgSpecHash": "fHBZvNM1l2hsawE33YFKc0NHZ5RlwzVNZC6CdI+hC8GHCQf4vYgwxM9MqVALhB/xvupgoAYUzWS1QzHsIWmn1A==",
   "success": true,
   "projectFilePath": "D:\\Microservices\\TODO APP (MICROSERVICES)\\TODOLIST_API\\ToDoListApi\\TodoApi.AuthenticationService\\TodoApi.AuthenticationService.csproj",
   "expectedPackageFiles": [

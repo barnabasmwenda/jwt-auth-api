@@ -9,13 +9,17 @@ namespace TodoApi.AuthenticationService.Services
     public class UserService : IUserService
     {
         private readonly TodoAuthenticationServiceDBContext _dbContext;
+
         private readonly PasswordHashService _passwordHashService;
+
         private readonly JwtTokenService _jwtTokenService;
 
         public UserService(TodoAuthenticationServiceDBContext dbContext, PasswordHashService passwordHashService, JwtTokenService jwtTokenService)
         {
             _dbContext = dbContext;
+
             _passwordHashService = passwordHashService;
+
             _jwtTokenService = jwtTokenService;
         }
 
@@ -61,28 +65,23 @@ namespace TodoApi.AuthenticationService.Services
 
             return user;
         }
-        public async Task<string> AuthenticateAsync(string username, string password)
-        {
-            // Find user by username
-            var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.Name == username);
 
-            // Check if user exists and the provided password is correct
+        public async Task<string> AuthenticateAsync(string email, string password)
+        {
+            var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.Email == email);
+
             if (user != null && _passwordHashService.VerifyPasswordHash(password, user.PasswordHash))
             {
-                // Generate and return JWT token if authentication is successful
                 return _jwtTokenService.GenerateJwtToken(user);
             }
             else
             {
-                // If user doesn't exist or password is incorrect, return appropriate error message
                 if (user == null)
                 {
-                    // Return error message for invalid username
-                    return "Invalid username";
+                    return "Invalid email address";
                 }
                 else
                 {
-                    // Return error message for invalid password
                     return "Invalid password";
                 }
             }
