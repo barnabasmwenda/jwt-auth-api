@@ -1,4 +1,4 @@
-# dotnet-core-web-api-crud-app
-.NET Core Web API CRUD APP Backend for Next.js TypeScript Frontend
+# jwt auth service
+.NET Core Web API Backend
 
 
